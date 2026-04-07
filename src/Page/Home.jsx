@@ -4,6 +4,7 @@ import Main from "../Components/Header/Main ";
 import Place from "../Components/Header/Place";
 import ChooseUs from "../Components/Header/ChooseUs";
 import Deals from "../Components/Header/Deals";
+import VideoPlace from "../Components/Header/VideoPlace";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Place></Place>
       <ChooseUs></ChooseUs>
       <Deals></Deals>
+      <VideoPlace></VideoPlace>
     </div>
   );
 };
