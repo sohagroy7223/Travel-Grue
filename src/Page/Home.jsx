@@ -5,6 +5,7 @@ import Place from "../Components/Header/Place";
 import ChooseUs from "../Components/Header/ChooseUs";
 import Deals from "../Components/Header/Deals";
 import VideoPlace from "../Components/Header/VideoPlace";
+import NewsLetter from "../Components/Header/NewsLetter";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <ChooseUs></ChooseUs>
       <Deals></Deals>
       <VideoPlace></VideoPlace>
+      <NewsLetter></NewsLetter>
     </div>
   );
 };

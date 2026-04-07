@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoPlace = () => {
   return (
-    <div className="flex gap-3 mt-15">
+    <div className="md:flex gap-3 mt-15 space-y-3">
       <div className="space-y-2.5">
         <h2 className="text-2xl font-bold">
           A Simple Perfect Place To Get Lost
@@ -28,8 +28,10 @@ const VideoPlace = () => {
       </div>
       <iframe
         className="rounded-2xl"
-        width="560"
-        height="315"
+        md:width="560"
+        width="450"
+        md:height="315"
+        height="250"
         src="https://www.youtube.com/embed/1LWDqve_Atc?si=Qwuw1GV18J0IsUcV"
         title="YouTube video player"
         frameborder="0"
