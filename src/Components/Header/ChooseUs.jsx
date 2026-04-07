@@ -2,7 +2,7 @@ import React from "react";
 
 const ChooseUs = () => {
   return (
-    <div className=" mt-12">
+    <div className=" mt-15">
       <div className="text-center">
         <h2 className="md:text-3xl text-2xl font-bold">Why Choose Us</h2>
         <p className="text-base-200 mt-3">

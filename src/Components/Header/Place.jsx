@@ -2,7 +2,7 @@ import React from "react";
 
 const Place = () => {
   return (
-    <div className="mt-12 text-center">
+    <div className="mt-15 text-center">
       <h2 className="md:text-3xl text-2xl font-bold">
         Choose Your Destination
       </h2>
