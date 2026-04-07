@@ -45,6 +45,7 @@ const Navbar = () => {
           className={`flex absolute flex-col bg-amber-500 duration-700 px-2 py-4 rounded-lg -ml-20 ${openMenu ? <links></links> : "-mt-80"}`}
         >
           {links}
+          <button className="btn bg-primary text-base-100">Sign In</button>
         </span>
       </div>
     </nav>
