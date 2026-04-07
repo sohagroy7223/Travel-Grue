@@ -37,6 +37,9 @@ const Hero = () => {
 
           <select className="px-4 py-2 bg-base-100  rounded-md text-black">
             <option>Select Type</option>
+            <option>Hill</option>
+            <option>waterfall</option>
+            <option>Somudro</option>
           </select>
 
           <button className="bg-primary text-white px-6 py-2 rounded-md">
