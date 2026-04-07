@@ -1,4 +1,5 @@
 import React from "react";
+import { IoSearch } from "react-icons/io5";
 
 const Hero = () => {
   return (
@@ -42,8 +43,9 @@ const Hero = () => {
             <option>Somudro</option>
           </select>
 
-          <button className="bg-primary text-white px-6 py-2 rounded-md">
-            Find Now
+          <button className="bg-primary flex items-center gap-2 text-white px-6 py-2 rounded-md">
+            <IoSearch size={20}></IoSearch>
+            <h2>Find Now</h2>
           </button>
         </div>
       </div>
