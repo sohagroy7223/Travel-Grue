@@ -8,8 +8,8 @@ const Massage = ({ testimonial }) => {
       <div className="flex gap-4">
         <img className="w-15 rounded-full" src={image} alt="user" />
         <div>
-          <h3>{name}</h3>
-          <p>{location}</p>
+          <h3 className="text-xl font-bold">{name}</h3>
+          <p className="text-base-200">{location}</p>
         </div>
       </div>
       <p>{comment}</p>

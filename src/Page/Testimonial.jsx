@@ -4,7 +4,7 @@ import Massage from "./Massage";
 
 const Testimonial = () => {
   const data = useLoaderData();
-  console.log(data);
+  //   console.log(data);
   return (
     <div>
       <h2>all Testimonial here {data.length}</h2>

@@ -27,9 +27,9 @@ const VideoPlace = () => {
         <button className="btn bg-primary text-white">See More</button>
       </div>
       <iframe
-        className="rounded-2xl"
-        md:width="560"
-        width="450"
+        className="rounded-2xl lg:w-140 md:w-450 mx-auto"
+        // md:width="560"
+        // width="350"
         md:height="315"
         height="250"
         src="https://www.youtube.com/embed/1LWDqve_Atc?si=Qwuw1GV18J0IsUcV"

@@ -41,7 +41,7 @@ const Deals = () => {
             nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
             Habitant adipiscing.
           </p>
-          <h3 className="text-2xl font-bold text-primary">
+          <h3 className="text-2xl font-bold text-blue-800">
             price: $1300-$1500
           </h3>
           <button className="btn text-base-100 bg-primary">Book Now</button>
@@ -81,7 +81,7 @@ const Deals = () => {
             nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
             Habitant adipiscing.
           </p>
-          <h3 className="text-2xl font-bold text-primary">
+          <h3 className="text-2xl font-bold text-blue-800">
             price: $1300-$1500
           </h3>
           <button className="btn text-base-100 bg-primary">Book Now</button>
@@ -118,7 +118,7 @@ const Deals = () => {
             nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
             Habitant adipiscing.
           </p>
-          <h3 className="text-2xl font-bold text-primary">
+          <h3 className="text-2xl font-bold text-blue-800">
             price: $1300-$1500
           </h3>
           <button className="btn text-base-100 bg-primary">Book Now</button>
