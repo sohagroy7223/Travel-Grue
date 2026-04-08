@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Top 10 Places to Visit in Cox's Bazar",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "author": "Sohag Roy",
+    "date": "2025-03-01",
+    "category": "Beach",
+    "description": "Explore the longest sea beach in the world and discover the best places to visit in Cox's Bazar.",
+    "read_time": "5 min"
+  },
+  {
+    "id": 2,
+    "title": "Why Sajek Valley is Called the Queen of Hills",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    "author": "Sohag Roy",
+    "date": "2025-03-05",
+    "category": "Mountain",
+    "description": "Sajek Valley offers breathtaking views of clouds, hills, and nature. Here's why it's a must-visit.",
+    "read_time": "4 min"
+  },
+  {
+    "id": 3,
+    "title": "A Complete Guide to Srimangal Tea Gardens",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "author": "Sohag Roy",
+    "date": "2025-03-10",
+    "category": "Nature",
+    "description": "Discover the beauty of tea gardens and peaceful environment in Srimangal.",
+    "read_time": "6 min"
+  },
+  {
+    "id": 4,
+    "title": "Best Hotels in Dhaka for Travelers",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+    "author": "Sohag Roy",
+    "date": "2025-03-12",
+    "category": "City",
+    "description": "Looking for the best hotels in Dhaka? Here are some top picks for comfort and budget.",
+    "read_time": "5 min"
+  },
+  {
+    "id": 5,
+    "title": "Maldives Travel Guide for Beginners",
+    "image": "https://i.ibb.co.com/cXbGfS2Y/Rectangle-5.png",
+    "author": "Sohag Roy",
+    "date": "2025-03-15",
+    "category": "Island",
+    "description": "Plan your dream trip to Maldives with this beginner-friendly guide.",
+    "read_time": "7 min"
+  },
+  {
+    "id": 6,
+    "title": "Bandarban Travel Tips You Should Know",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+    "author": "Sohag Roy",
+    "date": "2025-03-18",
+    "category": "Adventure",
+    "description": "From hills to waterfalls, Bandarban is full of adventure. Here are essential travel tips.",
+    "read_time": "5 min"
+  },
+  {
+    "id": 7,
+    "title": "Dubai Desert Safari Experience",
+    "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
+    "author": "Sohag Roy",
+    "date": "2025-03-20",
+    "category": "Desert",
+    "description": "Experience the thrill of desert safari in Dubai with dune bashing and camel rides.",
+    "read_time": "6 min"
+  },
+  {
+    "id": 8,
+    "title": "Top Things to Do in Sylhet",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+    "author": "Sohag Roy",
+    "date": "2025-03-22",
+    "category": "Nature",
+    "description": "Explore waterfalls, tea gardens, and lakes in Sylhet.",
+    "read_time": "4 min"
+  },
+  {
+    "id": 9,
+    "title": "Rangamati Travel Guide",
+    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+    "author": "Sohag Roy",
+    "date": "2025-03-25",
+    "category": "Lake",
+    "description": "Enjoy the beauty of Kaptai Lake and tribal culture in Rangamati.",
+    "read_time": "5 min"
+  },
+  {
+    "id": 10,
+    "title": "Paris Travel Guide: Must Visit Places",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+    "author": "Sohag Roy",
+    "date": "2025-03-28",
+    "category": "City",
+    "description": "Explore the romantic city of Paris with this complete travel guide.",
+    "read_time": "7 min"
+  }
+]

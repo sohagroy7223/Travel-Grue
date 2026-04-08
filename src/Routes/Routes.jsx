@@ -4,6 +4,8 @@ import Home from "../Page/Home";
 
 import Package from "../Page/Package";
 import Testimonial from "../Page/Testimonial";
+import Blog from "../Page/Blog";
+import Contact from "../Page/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -24,14 +26,15 @@ export const router = createBrowserRouter([
         Component: Testimonial,
         loader: () => fetch("/testimonial.json"),
       },
-      //   {
-      //     path: "blog",
-      //     Component: <Blog></Blog>,
-      //   },
-      //   {
-      //     path: "contact",
-      //     Component: <Contact></Contact>,
-      //   },
+      {
+        path: "blog",
+        Component: Blog,
+        loader: () => fetch("/blog.json"),
+      },
+      {
+        path: "contact",
+        Component: Contact,
+      },
       //   {
       //     path: "login",
       //     Component: <Login></Login>,
