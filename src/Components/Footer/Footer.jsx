@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center w-full bg-[#13131810] text-base-content rounded p-10">
+    <footer className="footer footer-horizontal footer-center bg-[#13131810] text-base-content rounded p-10">
       <img className="w-26" src={logo} alt="" />
       <div className="flex gap-5 items-center">
         <Link to="https://www.facebook.com/sohag.roy.283426">

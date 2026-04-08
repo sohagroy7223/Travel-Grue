@@ -32,7 +32,7 @@ const NewsLetter = () => {
             "url(https://i.ibb.co.com/g2TfT0N/Rectangle-8-1.png)",
         }}
       >
-        <div className="bg-primary text-base-100 p-5 rounded-lg text-center mt-46 ml-113">
+        <div className="bg-primary text-base-100  p-5 rounded-lg text-center mt-46 md:ml-113">
           <p>travel.com</p>
           <h3 className="text-2xl font-bold ">Save up to 70%</h3>
         </div>
