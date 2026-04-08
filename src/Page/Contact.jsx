@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const Contact = () => {
   return (
-    <div className="flex w-full justify-center gap-3 items-center">
+    <div className="md:flex w-full space-y-10 justify-center gap-3 items-center">
       <div className="space-y-5">
         <h3 className="text-4xl text-amber-700 font-bold">Get in Touch</h3>
         <p className="text-green-600 font-bold">
@@ -27,17 +27,17 @@ const Contact = () => {
               <Link to=" https://github.com/sohagroy7223">
                 <FaGithub size={25}></FaGithub>
               </Link>
-              <Link to=" https://www.instagram.com/sohagroy7223/">
-                <FaInstagram size={25}></FaInstagram>
-              </Link>
               <Link to="https://wa.me/8801311976179">
                 <FaWhatsapp size={25}></FaWhatsapp>
+              </Link>
+              <Link to=" https://www.instagram.com/sohagroy7223/">
+                <FaInstagram size={25}></FaInstagram>
               </Link>
             </div>
           </span>
         </div>
       </div>
-      <div className="border space-y-4 p-2">
+      <div className="border space-y-4 p-4 bg-amber-50">
         <div className="flex gap-3 justify-center w-full">
           <input
             className="border w-full p-2"
@@ -64,6 +64,9 @@ const Contact = () => {
           name="text area "
           id=""
         ></textarea>
+        <span className="flex justify-center">
+          <button className="btn bg-primary text-base-100">send</button>
+        </span>
       </div>
     </div>
   );
