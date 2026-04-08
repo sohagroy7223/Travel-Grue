@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoPlace = () => {
   return (
-    <div className="md:flex gap-3 mt-15 space-y-3">
+    <div className="md:flex gap-3 mt-15 space-y-10">
       <div className="space-y-2.5">
         <h2 className="text-2xl font-bold">
           A Simple Perfect Place To Get Lost
