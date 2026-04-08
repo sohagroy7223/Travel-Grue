@@ -15,3 +15,8 @@
 * {
   font-family: "Mulish", sans-serif;
 }
+
+nav .active {
+  text-decoration: underline;
+  color: blue;
+}
