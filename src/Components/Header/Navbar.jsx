@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center  mt-5">
       {/* logo */}
-      <img className="w-20" src={logo} alt="" />
+      <img className="w-23" src={logo} alt="" />
       {/* NavLink */}
       <div className="hidden md:flex">{links}</div>
       {/* Login */}

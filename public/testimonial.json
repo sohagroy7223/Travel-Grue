@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Ahmed",
+    "location": "Dhaka, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/men/32.jpg",
+    "rating": 5,
+    "comment": "Amazing experience! Everything was perfectly organized and the place was beautiful."
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "location": "Chattogram, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "rating": 4,
+    "comment": "Very comfortable stay. Loved the environment and service."
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "location": "Sylhet, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/men/65.jpg",
+    "rating": 5,
+    "comment": "Best travel experience ever! Highly recommended."
+  },
+  {
+    "id": 4,
+    "name": "Sadia Islam",
+    "location": "Khulna, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/women/12.jpg",
+    "rating": 4,
+    "comment": "Nice place with great service. Will visit again!"
+  },
+  {
+    "id": 5,
+    "name": "Mehedi Hasan",
+    "location": "Rajshahi, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/men/21.jpg",
+    "rating": 5,
+    "comment": "Loved the location and facilities. Worth every penny!"
+  },
+  {
+    "id": 6,
+    "name": "Farzana Akter",
+    "location": "Barisal, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/women/30.jpg",
+    "rating": 4,
+    "comment": "Good service and peaceful environment."
+  },
+  {
+    "id": 7,
+    "name": "Arif Hossain",
+    "location": "Rangpur, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/men/11.jpg",
+    "rating": 5,
+    "comment": "Fantastic trip! Everything was smooth and enjoyable."
+  },
+  {
+    "id": 8,
+    "name": "Jannatul Ferdous",
+    "location": "Comilla, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/women/55.jpg",
+    "rating": 4,
+    "comment": "Great experience overall. Highly satisfied!"
+  },
+  {
+    "id": 9,
+    "name": "Rakib Khan",
+    "location": "Mymensingh, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/men/45.jpg",
+    "rating": 5,
+    "comment": "Excellent service and beautiful places."
+  },
+  {
+    "id": 10,
+    "name": "Sumaiya Rahman",
+    "location": "Noakhali, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/women/60.jpg",
+    "rating": 5,
+    "comment": "Truly unforgettable experience. Loved it!"
+  }
+]

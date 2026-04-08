@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import Home from "../Page/Home";
 
 import Package from "../Page/Package";
+import Testimonial from "../Page/Testimonial";
 
 export const router = createBrowserRouter([
   {
@@ -18,10 +19,10 @@ export const router = createBrowserRouter([
         Component: Package,
         loader: () => fetch("/hotels.json"),
       },
-      //   {
-      //     path: "testimonial",
-      //     Component: <Testimonial></Testimonial>,
-      //   },
+      {
+        path: "testimonial",
+        Component: Testimonial,
+      },
       //   {
       //     path: "blog",
       //     Component: <Blog></Blog>,
