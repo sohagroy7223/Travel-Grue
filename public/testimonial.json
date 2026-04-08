@@ -78,5 +78,21 @@
     "image": "https://randomuser.me/api/portraits/women/60.jpg",
     "rating": 5,
     "comment": "Truly unforgettable experience. Loved it!"
+  },
+  {
+    "id": 11,
+    "name": "Hasan Mahmud",
+    "location": "Gazipur, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/men/50.jpg",
+    "rating": 4,
+    "comment": "Nice service and friendly staff. Will recommend to others."
+  },
+  {
+    "id": 12,
+    "name": "Tania Sultana",
+    "location": "Narayanganj, Bangladesh",
+    "image": "https://randomuser.me/api/portraits/women/25.jpg",
+    "rating": 5,
+    "comment": "Absolutely loved the trip! Everything exceeded expectations."
   }
 ]

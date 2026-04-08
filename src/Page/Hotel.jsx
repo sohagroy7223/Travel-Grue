@@ -2,7 +2,7 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 
 const Hotel = ({ hotel }) => {
-  console.log(hotel);
+  //   console.log(hotel);
   return (
     <div className="md:flex mt-5 space-y-2 justify-center items-center gap-3 ">
       {/* img */}

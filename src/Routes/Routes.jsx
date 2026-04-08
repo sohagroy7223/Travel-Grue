@@ -22,6 +22,7 @@ export const router = createBrowserRouter([
       {
         path: "testimonial",
         Component: Testimonial,
+        loader: () => fetch("/testimonial.json"),
       },
       //   {
       //     path: "blog",
