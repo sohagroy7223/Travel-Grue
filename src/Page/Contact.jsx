@@ -12,7 +12,7 @@ const Contact = () => {
 
     EmailJSResponseStatus(
       sendForm("service_kijgw78", "template_asll50n", form.current, {
-        publicKey: "JNizJBMFsUpjaepjq",
+        publicKey: "WKUeps3QtzX9Z2ZPL",
       })
         .then(() => {
           alert("send massage successfully");

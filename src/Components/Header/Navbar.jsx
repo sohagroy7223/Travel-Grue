@@ -37,7 +37,9 @@ const Navbar = () => {
       <div className="hidden md:flex">{links}</div>
       {/* Login */}
       <Link to="/login">
-        <button className="btn bg-primary text-base-100">Sign In</button>
+        <button className="btn hidden md:block bg-primary text-base-100">
+          Sign In
+        </button>
       </Link>
       <div onClick={handelOpenMenu} className="md:hidden relative">
         {openMenu ? <IoClose size={25}></IoClose> : <IoMenu size={25}></IoMenu>}
@@ -46,7 +48,7 @@ const Navbar = () => {
         >
           {links}
           <Link to="/login">
-            <button className="btn bg-primary text-base-100">Sign In</button>
+            <button className="btn bg-primary  text-base-100">Sign In</button>
           </Link>
         </span>
       </div>

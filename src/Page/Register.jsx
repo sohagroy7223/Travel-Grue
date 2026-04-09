@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const Register = () => {
   return (
     <div className="hero min-h-screen">
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div className=" bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
         <div className="card-body">
           <form className="fieldset space-y-1">
             <h1 className="text-4xl font-bold text-center">Register now!</h1>
