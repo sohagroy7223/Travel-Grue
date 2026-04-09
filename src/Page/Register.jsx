@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 
 const Register = () => {
-  const { SignUp } = use(AuthContext);
+  const { SignUp, setUser } = use(AuthContext);
 
   const handelRegister = (e) => {
     e.preventDefault();
@@ -14,7 +14,8 @@ const Register = () => {
     console.log(name, photo);
     SignUp(email, password)
       .then((result) => {
-        alert(result, "login in success ");
+        const user = result.user;
+        setUser(user);
       })
       .catch((error) => {
         console.log(error.message);

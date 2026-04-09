@@ -1,13 +1,26 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import logo from "../../assets/logo.png";
 import { Link, NavLink } from "react-router";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { AuthContext } from "../../Context/AuthContext";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const { user, SignOut } = use(AuthContext);
+  console.log(user);
 
   const handelOpenMenu = () => {
     setOpenMenu(!openMenu);
+  };
+
+  const handelSignOut = () => {
+    SignOut()
+      .then(() => {
+        console.log("sign out success full");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   const links = (
@@ -37,11 +50,23 @@ const Navbar = () => {
       <div className="hidden md:flex">{links}</div>
       {/* Login */}
       <div>
-        <Link to="/login">
-          <button className="btn hidden md:block bg-primary text-base-100">
-            Sign In
+        {user && (
+          <img className="w-15 rounded-full " src={user.photoURL} alt="" />
+        )}
+        {user ? (
+          <button
+            onClick={handelSignOut}
+            className="btn hidden md:block bg-primary text-base-100"
+          >
+            Logout
           </button>
-        </Link>
+        ) : (
+          <Link to="/login">
+            <button className="btn hidden md:block bg-primary text-base-100">
+              Sign In
+            </button>
+          </Link>
+        )}
       </div>
       <div onClick={handelOpenMenu} className="md:hidden relative">
         {openMenu ? <IoClose size={25}></IoClose> : <IoMenu size={25}></IoMenu>}
