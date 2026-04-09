@@ -1,10 +1,28 @@
-import React from "react";
+import { EmailJSResponseStatus, sendForm } from "@emailjs/browser";
+import React, { useRef } from "react";
 import { BiSolidLike } from "react-icons/bi";
 import { FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    EmailJSResponseStatus(
+      sendForm("service_kijgw78", "template_asll50n", form.current, {
+        publicKey: "JNizJBMFsUpjaepjq",
+      })
+        .then(() => {
+          alert("send massage successfully");
+        })
+        .catch((error) => {
+          console.log("Failed", error.text);
+        }),
+    );
+  };
+
   return (
     <div className="md:flex w-full space-y-10 justify-center gap-3 items-center">
       <div className="space-y-5">
@@ -37,7 +55,11 @@ const Contact = () => {
           </span>
         </div>
       </div>
-      <div className="border space-y-4 p-4 bg-amber-50">
+      <form
+        onSubmit={sendEmail}
+        ref={form}
+        className="border space-y-4 p-4 bg-amber-50"
+      >
         <div className="flex gap-3 justify-center w-full">
           <input
             className="border w-full p-2"
@@ -67,7 +89,7 @@ const Contact = () => {
         <span className="flex justify-center">
           <button className="btn bg-primary text-base-100">send</button>
         </span>
-      </div>
+      </form>
     </div>
   );
 };
