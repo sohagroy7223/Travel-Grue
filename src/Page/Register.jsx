@@ -1,14 +1,24 @@
-import React from "react";
+import React, { use } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "../Context/AuthContext";
 
 const Register = () => {
+  const { signUp } = use(AuthContext);
+
   const handelRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
     const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(name, photo, email, password);
+    console.log(name, photo);
+    signUp(email, password)
+      .then((result) => {
+        alert(result, "login in success ");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
 
   return (
