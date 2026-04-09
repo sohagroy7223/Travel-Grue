@@ -6,6 +6,7 @@ import Package from "../Page/Package";
 import Testimonial from "../Page/Testimonial";
 import Blog from "../Page/Blog";
 import Contact from "../Page/Contact";
+import Login from "../Page/Login";
 
 export const router = createBrowserRouter([
   {
@@ -35,10 +36,10 @@ export const router = createBrowserRouter([
         path: "contact",
         Component: Contact,
       },
-      //   {
-      //     path: "login",
-      //     Component: <Login></Login>,
-      //   },
+      {
+        path: "login",
+        Component: Login,
+      },
       //   {
       //     path: "register",
       //     Component: <Register></Register>,

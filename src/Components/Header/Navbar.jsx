@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { IoClose, IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
@@ -36,16 +36,18 @@ const Navbar = () => {
       {/* NavLink */}
       <div className="hidden md:flex">{links}</div>
       {/* Login */}
-      <button className="btn bg-primary text-base-100 hidden md:flex">
-        Sign In
-      </button>
+      <Link to="/login">
+        <button className="btn bg-primary text-base-100">Sign In</button>
+      </Link>
       <div onClick={handelOpenMenu} className="md:hidden relative">
         {openMenu ? <IoClose size={25}></IoClose> : <IoMenu size={25}></IoMenu>}
         <span
           className={`flex absolute flex-col bg-amber-500 duration-700 px-2 py-4 rounded-lg -ml-20 ${openMenu ? <links></links> : "-mt-80"}`}
         >
           {links}
-          <button className="btn bg-primary text-base-100">Sign In</button>
+          <Link to="/login">
+            <button className="btn bg-primary text-base-100">Sign In</button>
+          </Link>
         </span>
       </div>
     </nav>
