@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import logo from "../../assets/logo.png";
 import { Link, NavLink } from "react-router";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { AuthContext } from "../../Context/AuthContext";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const userInfo = use(AuthContext);
+  console.log(userInfo);
 
   const handelOpenMenu = () => {
     setOpenMenu(!openMenu);

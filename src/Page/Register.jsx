@@ -9,17 +9,33 @@ const Register = () => {
           <form className="fieldset space-y-1">
             <h1 className="text-4xl font-bold text-center">Register now!</h1>
             <label className="label">name</label>
-            <input type="text" className="input" placeholder="Your name" />
+            <input
+              type="text"
+              name="name"
+              className="input"
+              placeholder="Your name"
+            />
             <label className="label">Photo URL</label>
             <input
               type="text"
+              name="photo"
               className="input"
               placeholder="input photo url"
             />
             <label className="label">Email</label>
-            <input type="email" className="input" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              className="input"
+              placeholder="Email"
+            />
             <label className="label">Password</label>
-            <input type="password" className="input" placeholder="Password" />
+            <input
+              type="password"
+              name="password"
+              className="input"
+              placeholder="Password"
+            />
 
             <button className="btn btn-neutral mt-4">Register</button>
             <button>
