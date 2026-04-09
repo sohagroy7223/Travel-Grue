@@ -36,11 +36,13 @@ const Navbar = () => {
       {/* NavLink */}
       <div className="hidden md:flex">{links}</div>
       {/* Login */}
-      <Link to="/login">
-        <button className="btn hidden md:block bg-primary text-base-100">
-          Sign In
-        </button>
-      </Link>
+      <div>
+        <Link to="/login">
+          <button className="btn hidden md:block bg-primary text-base-100">
+            Sign In
+          </button>
+        </Link>
+      </div>
       <div onClick={handelOpenMenu} className="md:hidden relative">
         {openMenu ? <IoClose size={25}></IoClose> : <IoMenu size={25}></IoMenu>}
         <span
