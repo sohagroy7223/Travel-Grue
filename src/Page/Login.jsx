@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Login = () => {
   return (
-    <div className="hero bg-amber-500 min-h-screen">
+    <div className="hero min-h-screen">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
         <div className="card-body">
           <form className="fieldset space-y-2">
@@ -23,6 +24,13 @@ const Login = () => {
               <a className="link link-hover text-amber-600">Forgot password?</a>
             </div>
             <button className="btn btn-neutral mt-4">Login</button>
+            <button>
+              Dont’t Have An Account ?
+              <Link to="/register">
+                {" "}
+                <b className="text-blue-500 font-black">Register</b>
+              </Link>
+            </button>
           </form>
         </div>
       </div>

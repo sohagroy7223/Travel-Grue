@@ -7,6 +7,7 @@ import Testimonial from "../Page/Testimonial";
 import Blog from "../Page/Blog";
 import Contact from "../Page/Contact";
 import Login from "../Page/Login";
+import Register from "../Page/Register";
 
 export const router = createBrowserRouter([
   {
@@ -40,10 +41,10 @@ export const router = createBrowserRouter([
         path: "login",
         Component: Login,
       },
-      //   {
-      //     path: "register",
-      //     Component: <Register></Register>,
-      //   },
+      {
+        path: "register",
+        Component: Register,
+      },
     ],
   },
 ]);
