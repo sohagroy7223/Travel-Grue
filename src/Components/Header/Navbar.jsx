@@ -1,6 +1,6 @@
 import React, { use, useState } from "react";
 import logo from "../../assets/logo.png";
-import { Link, NavLink, useNavigate } from "react-router";
+import { Link, Navigate, NavLink, useNavigate } from "react-router";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { AuthContext } from "../../Context/AuthContext";
 
@@ -76,9 +76,14 @@ const Navbar = () => {
           className={`flex absolute flex-col bg-amber-500 duration-700 px-2 py-4 rounded-lg -ml-20 ${openMenu ? <links></links> : "-mt-80"}`}
         >
           {links}
-          <Link to="/login">
-            <button className="btn bg-primary  text-base-100">Sign In</button>
-          </Link>
+
+          <button className="btn bg-primary  text-base-100">
+            {user ? (
+              <button onClick={handelSignOut}>Log Out</button>
+            ) : (
+              <button>Sign In</button>
+            )}
+          </button>
         </span>
       </div>
     </nav>
