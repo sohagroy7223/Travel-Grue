@@ -51,10 +51,8 @@ const Navbar = () => {
       {/* NavLink */}
       <div className="hidden md:flex">{links}</div>
       {/* Login */}
+      {/* {user && user.email} */}
       <div>
-        {user && (
-          <img className="w-15 rounded-full " src={user.photoURL} alt="" />
-        )}
         {user ? (
           <button
             onClick={handelSignOut}
