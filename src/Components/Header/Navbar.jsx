@@ -1,13 +1,14 @@
 import React, { use, useState } from "react";
 import logo from "../../assets/logo.png";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { AuthContext } from "../../Context/AuthContext";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const { user, SignOut } = use(AuthContext);
-  console.log(user);
+  const navigate = useNavigate();
+  // console.log(user);
 
   const handelOpenMenu = () => {
     setOpenMenu(!openMenu);
@@ -17,6 +18,7 @@ const Navbar = () => {
     SignOut()
       .then(() => {
         console.log("sign out success full");
+        navigate("/login");
       })
       .catch((error) => {
         console.log(error);
