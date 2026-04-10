@@ -12,6 +12,7 @@ const Login = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+
     // console.log(email, password);
     SignIn(email, password)
       .then((result) => {
@@ -46,11 +47,7 @@ const Login = () => {
               className="input"
               placeholder="Password"
             />
-            <div className="flex justify-between items-center">
-              <span className="flex gap-1.5 items-center">
-                <input type="checkbox" name="check" id="" />
-                <p>Remember Me</p>
-              </span>
+            <div>
               <a className="link link-hover text-amber-600">Forgot password?</a>
             </div>
             <button className="btn btn-neutral mt-4">Login</button>

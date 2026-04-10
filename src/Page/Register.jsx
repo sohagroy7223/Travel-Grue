@@ -12,6 +12,12 @@ const Register = () => {
     const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const trams = e.target.check.checked;
+
+    if (!trams) {
+      return alert("please accept our trams and conduction");
+    }
+
     // console.log(name, photo);
     SignUp(email, password)
       .then((result) => {
@@ -67,6 +73,11 @@ const Register = () => {
               className="input"
               placeholder="Password"
             />
+
+            <span className="flex gap-1.5 items-center">
+              <input type="checkbox" name="check" id="" />
+              <p>trams and condition</p>
+            </span>
 
             <button className="btn btn-neutral mt-4">Register</button>
             <button>
