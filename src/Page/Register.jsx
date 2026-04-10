@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 
 const Register = () => {
-  const { SignUp, setUser } = use(AuthContext);
+  const { SignUp, setUser, UpdateUser } = use(AuthContext);
   const navigate = useNavigate();
 
   const handelRegister = (e) => {
@@ -12,7 +12,7 @@ const Register = () => {
     const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(name, photo);
+    // console.log(name, photo);
     SignUp(email, password)
       .then((result) => {
         const user = result.user;
@@ -21,6 +21,14 @@ const Register = () => {
       })
       .catch((error) => {
         console.log(error.message);
+      });
+
+    UpdateUser({ displayName: name, photoURL: photo })
+      .then(() => {
+        console.log("update profile");
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
 
