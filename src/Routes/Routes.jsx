@@ -8,6 +8,7 @@ import Blog from "../Page/Blog";
 import Contact from "../Page/Contact";
 import Login from "../Page/Login";
 import Register from "../Page/Register";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +21,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "packages",
-        Component: Package,
+        // Component: Package,
+        element: (
+          <PrivateRoute>
+            <Package></Package>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/hotels.json"),
       },
       {
