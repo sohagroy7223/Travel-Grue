@@ -23,8 +23,9 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
+
         emailVerify().then(() => {
-          alert("please check your and verified your ");
+          alert("please check your and verified your email");
         });
 
         UpdateUser({ displayName: name, photoURL: photo })

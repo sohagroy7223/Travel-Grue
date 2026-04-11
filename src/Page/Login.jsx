@@ -1,12 +1,13 @@
-import React, { use } from "react";
+import React, { use, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 
 const Login = () => {
-  const { SignIn, setUser } = use(AuthContext);
+  const { SignIn, setUser, resetPassword } = use(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   // console.log(location);
+  const emailRef = useRef();
 
   const handelLogin = (e) => {
     e.preventDefault();
@@ -25,6 +26,17 @@ const Login = () => {
       });
   };
 
+  const handelForgetPassword = () => {
+    const email = emailRef.current.value;
+    resetPassword(email)
+      .then(() => {
+        alert("we send a reset password email , please check your email");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="hero min-h-screen">
       <div className=" bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -35,6 +47,7 @@ const Login = () => {
             <input
               type="email"
               name="email"
+              ref={emailRef}
               autoComplete="email"
               className="input"
               placeholder="Username or Email"
@@ -47,9 +60,14 @@ const Login = () => {
               className="input"
               placeholder="Password"
             />
-            <div>
-              <a className="link link-hover text-amber-600">Forgot password?</a>
-            </div>
+
+            <a
+              onClick={handelForgetPassword}
+              className="link link-hover text-amber-600"
+            >
+              Forgot password?
+            </a>
+
             <button className="btn btn-neutral mt-4">Login</button>
             <button>
               Dont't Have An Account ?

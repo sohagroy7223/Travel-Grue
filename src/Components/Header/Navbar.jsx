@@ -8,7 +8,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const { user, SignOut } = use(AuthContext);
   const navigate = useNavigate();
-  // console.log(user);
+  console.log(user);
 
   const handelOpenMenu = () => {
     setOpenMenu(!openMenu);
