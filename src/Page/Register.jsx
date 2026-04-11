@@ -1,8 +1,11 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 
 const Register = () => {
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
+
   const { SignUp, setUser, UpdateUser, emailVerify } = use(AuthContext);
   const navigate = useNavigate();
 
@@ -18,12 +21,39 @@ const Register = () => {
       return alert("please accept our trams and conduction");
     }
 
+    setError("");
+
+    // password validation
+
+    const passwordRegEx = /(?=.*\d)/;
+    const passwordRegEx2 = /(?=.*[A-Z])/;
+    const passwordRegEx3 = /(?=.*[a-z])/;
+    const passwordRegEx4 = /(?=.*[@$!%*?&])/;
+    const passwordRegEx5 = /.{8,}/;
+
+    if (passwordRegEx.test(password) === false) {
+      setError("add any number character");
+      return;
+    } else if (passwordRegEx2.test(password) === false) {
+      setError("Must include an uppercase letter");
+      return;
+    } else if (passwordRegEx3.test(password) === false) {
+      setError("Must include a lowercase letter");
+      return;
+    } else if (passwordRegEx4.test(password) === false) {
+      setError("Must include a special (@#$&*?) character");
+      return;
+    } else if (passwordRegEx5.test(password) === false) {
+      setError("Password must be at least 8 characters");
+      return;
+    }
+
     // console.log(name, photo);
     SignUp(email, password)
       .then((result) => {
         const user = result.user;
         setUser(user);
-
+        setSuccess(true);
         emailVerify().then(() => {
           alert("please check your and verified your email");
         });
@@ -33,13 +63,13 @@ const Register = () => {
             setUser({ ...user, displayName: name, photoURL: photo });
           })
           .catch((error) => {
-            console.log(error);
+            setError(error.message);
             setUser(user);
           });
         navigate("/");
       })
       .catch((error) => {
-        console.log(error.message);
+        setError(error.message);
       });
   };
 
@@ -78,6 +108,7 @@ const Register = () => {
               className="input"
               placeholder="Password"
             />
+            <p className="text-red-500 text-xs">{error}</p>
 
             <span className="flex gap-1.5 items-center">
               <input type="checkbox" name="check" id="" />
@@ -92,6 +123,9 @@ const Register = () => {
                 <b className="text-blue-500 font-black">Login</b>
               </Link>
             </button>
+            {success && (
+              <p className="text-green-600">Sign up user successfully</p>
+            )}
           </form>
         </div>
       </div>

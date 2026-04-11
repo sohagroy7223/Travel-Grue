@@ -8,7 +8,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const { user, SignOut } = use(AuthContext);
   const navigate = useNavigate();
-  console.log(user);
+  // console.log(user);
 
   const handelOpenMenu = () => {
     setOpenMenu(!openMenu);
@@ -17,7 +17,7 @@ const Navbar = () => {
   const handelSignOut = () => {
     SignOut()
       .then(() => {
-        console.log("sign out success full");
+        // console.log("sign out success full");
         navigate("/login");
       })
       .catch((error) => {
