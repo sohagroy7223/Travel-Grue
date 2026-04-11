@@ -40,6 +40,7 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   const UpdateUser = (updateData) => {
+    setLoading(true);
     return updateProfile(auth.currentUser, updateData);
   };
 
@@ -57,11 +58,13 @@ const AuthProvider = ({ children }) => {
   };
 
   const loginWithGoogle = () => {
+    setLoading(true);
     const provider = new GoogleAuthProvider();
     return signInWithPopup(auth, provider);
   };
 
   const loginWithGitHub = () => {
+    setLoading(true);
     const GitHubProvider = new GithubAuthProvider();
     return signInWithPopup(auth, GitHubProvider);
   };
