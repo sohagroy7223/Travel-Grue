@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 
 const Register = () => {
-  const { SignUp, setUser, UpdateUser } = use(AuthContext);
+  const { SignUp, setUser, UpdateUser, emailVerify } = use(AuthContext);
   const navigate = useNavigate();
 
   const handelRegister = (e) => {
@@ -23,6 +23,10 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
+        emailVerify().then(() => {
+          alert("please check your and verified your ");
+        });
+
         UpdateUser({ displayName: name, photoURL: photo })
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photo });

@@ -8,7 +8,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const { user, SignOut } = use(AuthContext);
   const navigate = useNavigate();
-  console.log(user);
+  // console.log(user);
 
   const handelOpenMenu = () => {
     setOpenMenu(!openMenu);
@@ -52,12 +52,22 @@ const Navbar = () => {
       <div className="hidden md:flex">{links}</div>
       {/* {user && user.email} */}
       {/* Login */}
-      <div className="flex gap-2 items-center">
-        <img
-          className="w-14 h-13 bg-cover rounded-full"
-          src={user?.photoURL}
-          alt=""
-        />
+      <div className="flex gap-3 items-center">
+        {user ? (
+          <img
+            className="w-14 h-13 bg-cover rounded-full"
+            src={user.photoURL}
+            alt=""
+          />
+        ) : (
+          <img
+            className="w-14 h-13 bg-cover rounded-full"
+            src={
+              "https://img.icons8.com/?size=100&id=7819&format=png&color=000000"
+            }
+            alt=""
+          />
+        )}
         {user ? (
           <button
             onClick={handelSignOut}
