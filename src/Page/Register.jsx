@@ -23,18 +23,18 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
+        UpdateUser({ displayName: name, photoURL: photo })
+          .then(() => {
+            setUser({ ...user, displayName: name, photoURL: photo });
+          })
+          .catch((error) => {
+            console.log(error);
+            setUser(user);
+          });
         navigate("/");
       })
       .catch((error) => {
         console.log(error.message);
-      });
-
-    UpdateUser({ displayName: name, photoURL: photo })
-      .then(() => {
-        console.log("update profile");
-      })
-      .catch((error) => {
-        console.log(error);
       });
   };
 

@@ -8,7 +8,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const { user, SignOut } = use(AuthContext);
   const navigate = useNavigate();
-  // console.log(user);
+  console.log(user);
 
   const handelOpenMenu = () => {
     setOpenMenu(!openMenu);
@@ -50,9 +50,14 @@ const Navbar = () => {
       <img className="w-23" src={logo} alt="" />
       {/* NavLink */}
       <div className="hidden md:flex">{links}</div>
-      {/* Login */}
       {/* {user && user.email} */}
-      <div>
+      {/* Login */}
+      <div className="flex gap-2 items-center">
+        <img
+          className="w-14 h-13 bg-cover rounded-full"
+          src={user?.photoURL}
+          alt=""
+        />
         {user ? (
           <button
             onClick={handelSignOut}
