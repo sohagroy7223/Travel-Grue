@@ -104,9 +104,9 @@ const Login = () => {
       </div>
       <div>
         <p className="flex items-center justify-center gap-3.5">
-          <hr className="w-60" />
+          <hr className="w-63" />
           <p>or</p>
-          <hr className="w-60" />
+          <hr className="w-63" />
         </p>
         <div className="flex flex-col space-y-3 w-full items-center mt-3">
           <button
